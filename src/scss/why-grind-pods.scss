@@ -82,6 +82,7 @@
     bottom: 0;
     right: 0;
     margin-right: -9rem;
+    pointer-events: none;
 
     @include bp($SCR_LARGE, max-width) {
       display: none;
