@@ -1,0 +1,56 @@
+{
+  "section_title": "Why our\ncoffee pods?",
+  "section_intro": "There are a lot of coffee pods out there. Ours are compostable and filled with organic coffee, ethically sourced from sustainable farms. We think they're better than Nespresso's own pods, but we'll let you decide.",
+  "benefits": {
+    "title": "Grind\nNespresso® Pods.",
+    "items": [
+      {
+        "title": "Better for the planet",
+        "subtitle": "compostable pods, free from plastic"
+      },
+      {
+        "title": "Only great coffee",
+        "subtitle": "specialty-grade and always organic"
+      },
+      {
+        "title": "Free shipping",
+        "subtitle": "delivered carbon-positive"
+      },
+      {
+        "title": "Independent British business",
+        "subtitle": "based in London"
+      },
+      {
+        "title": "Get started for £9.95.",
+        "subtitle": "if you love them, you'll pay: £13.50/month for a 30 pod subscription"
+      }
+    ],
+    "cta_text": "Upgrade your coffee at home",
+    "cta_link": "/"
+  },
+  "others": {
+    "title": "Own-Brand\nNespresso® Pods.",
+    "items": [
+      {
+        "title": "Plastic and aluminium pods",
+        "subtitle": "contributing to the 29,000 pods going to landfill every minute"
+      },
+      {
+        "title": "Low Quality",
+        "subtitle": "non-organic coffee"
+      },
+      {
+        "title": "Owned by Nestlé",
+        "subtitle": "a Swiss conglomerate"
+      },
+      {
+        "title": "Free delivery from £35",
+        "subtitle": ""
+      },
+      {
+        "title": "£17/month",
+        "subtitle": "for a 30 pod subscription"
+      }
+    ]
+  }
+}

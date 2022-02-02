@@ -1,0 +1,18 @@
+@import "./vars";
+@import "./mixins";
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+.App {
+  @include bp($SCR_LARGE, max-width) {
+    white-space: pre-line;
+  }
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}

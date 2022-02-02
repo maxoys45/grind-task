@@ -1,0 +1,189 @@
+@import "./vars";
+@import "./mixins";
+
+.why-grind {
+  margin: 0 auto;
+  
+  &__copy {
+    padding: 2rem 2rem 0;
+    background-color: $COLOR_BG;
+  }
+  
+  &__copy-inner {
+    max-width: 62rem;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 4em;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+    color: $COLOR_CHARCOAL;
+    letter-spacing: -1px;
+    margin-bottom: .4em;
+  }
+
+  &__intro {
+    color: $COLOR_CHARCOAL_LIGHT;
+    font-size: 1.7em;
+    line-height: 1.3;
+    text-align: center;
+    margin: 0 2rem;
+  }
+
+  &__tables {
+    padding: 2rem;
+    background-color: $COLOR_BG;
+
+    @include bp($SCR_LARGE) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, $COLOR_BG 0%, $COLOR_BG 50%, $COLOR_WHITE 50%, $COLOR_WHITE 100%);
+    }
+  }
+
+  &__benefits {
+    border: 2px solid $COLOR_GRIND_GREEN;
+
+    @include bp($SCR_LARGE) {
+      flex: 0 1 48rem;
+    }
+  }
+
+  &__others {
+    @include bp($SCR_LARGE) {
+      flex: 0 1 38rem;
+    }
+  }
+
+  &__cta {
+    display: block;
+    background-color: $COLOR_CHARCOAL;
+    color: $COLOR_WHITE;
+    font-size: 1.6em;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    padding: 1.5rem 2.4rem;
+    border-radius: 4px;
+    margin-top: 2rem;
+
+    @include bp($SCR_LARGE) {
+      margin-right: 14rem;
+    }
+  }
+
+  &__hand-img {
+    display: block;
+    max-width: 50rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: -9rem;
+
+    @include bp($SCR_LARGE, max-width) {
+      display: none;
+    }
+  }
+}
+
+.grind-table {
+  position: relative;
+  border-radius: 8px;
+  background-color: $COLOR_WHITE;
+  padding: 3rem;
+  box-shadow: 0 .8rem 2rem rgba($COLOR_BLACK, 0.1);
+
+  @include bp($SCR_LARGE, max-width) {
+    max-width: 64rem;
+    margin: 0 auto;
+  }
+
+  &:not(:last-of-type) {
+    @include bp($SCR_LARGE, max-width) {
+      margin-bottom: 4em;
+    }
+
+    @include bp($SCR_LARGE) {
+      margin-right: 4rem;
+    }
+  }
+  
+  &__title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+    &#{&}--benefits {
+      text-align: center;
+      font-size: 2.8em;
+      line-height: 1.15;
+    }
+
+    &#{&}--others {
+      font-size: 2.2em;
+      line-height: 1.27;
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__clip-path {
+    shape-outside: polygon(100% 0, 100% 100%, 59% 100%, 59% 46%, 79% 0);
+    width: 380px;
+    height: 400px;
+    float: right;
+
+    @include bp($SCR_LARGE, max-width) {
+      display: none;
+    }
+  }
+}
+
+.grind-item {
+  position: relative;
+  padding-left: 3.7rem;
+  padding-top: 1px; // visually aligns tick/cross better.
+
+  &:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+
+  &__tick,
+  &__cross {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.4rem;
+    height: 2.4rem;
+    display: block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  &__tick {
+    background-image: url('../img/icon_tick.png');
+  }
+
+  &__cross {
+    background-image: url('../img/icon_cross.png');
+  }
+
+  &__title,
+  &__desc {
+    font-size: 1.7em;
+    line-height: 1.3;
+  }
+
+  &__title {
+    font-weight: 700;
+    color: $COLOR_CHARCOAL;
+  }
+
+  &__desc {
+    color: $COLOR_CHARCOAL_LIGHT;
+  }
+}
