@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/grind-task/static/css/main.60008947.css",
+    "main.js": "/grind-task/static/js/main.8c168139.js",
+    "static/media/GrindPods.png": "/grind-task/static/media/GrindPods.095e8cbc43f16e7b0c2c.png",
+    "index.html": "/grind-task/index.html",
+    "main.60008947.css.map": "/grind-task/static/css/main.60008947.css.map",
+    "main.8c168139.js.map": "/grind-task/static/js/main.8c168139.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60008947.css",
+    "static/js/main.8c168139.js"
+  ]
+}
