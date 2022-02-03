@@ -40,7 +40,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(180deg, $COLOR_BG 0%, $COLOR_BG 50%, $COLOR_WHITE 50%, $COLOR_WHITE 100%);
+      background: linear-gradient(180deg, $COLOR_BG 0%, $COLOR_BG 50%, rgba($COLOR_WHITE, 0) 50%, rgba($COLOR_WHITE, 0) 100%);
     }
   }
 
